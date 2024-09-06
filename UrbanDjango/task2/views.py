@@ -8,3 +8,6 @@ def index(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     return render(request, 'second_task/class_template.html', {'page_obj': page_obj})
+
+# cd UrbanDjango
+# python manage.py runserver
